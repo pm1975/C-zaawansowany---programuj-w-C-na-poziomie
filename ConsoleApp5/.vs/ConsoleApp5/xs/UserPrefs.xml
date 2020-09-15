@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{8984A136-2FD8-4344-B5D7-749424ADC471}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp5/Program.cs">
     <Files>
-      <File FileName="ConsoleApp5/Program.cs" Line="9" Column="14" />
+      <File FileName="ConsoleApp5/Program.cs" Line="58" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +17,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ConsoleApp5 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp5 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
