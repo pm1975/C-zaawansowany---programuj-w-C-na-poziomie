@@ -10,7 +10,9 @@ namespace ConsoleApp5
             #region zmienne
             var someVariable = "string";
             var someNumber = 5.0m;
+            someNumber = SomeFunction(5);
             var trueOrFalse = 5 > 2;
+
 
             var date = DateTime.Now;
             #endregion
@@ -80,9 +82,23 @@ namespace ConsoleApp5
             }
             #endregion
 
-            #region funkcje
+            #region klasy
+
+            var someClass = new SomeClass();
 
             #endregion
+
         }
+
+        #region funkcje
+        //dzielimy kod na pomniejsze funkcje, żeby funkcja Main nie rozrastała się do gigantycznych rozmiarów
+        //które możemy w dowolnym miejscu w kodzie wywołać
+        //można pisać funkcję wewnątrz funkcji lub wewnątrz klas
+
+        public static int SomeFunction(int someNumber)
+        {
+            return someNumber + 1;
+        }
+        #endregion
     }
 }

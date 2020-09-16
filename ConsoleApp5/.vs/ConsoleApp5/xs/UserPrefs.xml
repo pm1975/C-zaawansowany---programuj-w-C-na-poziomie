@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{8984A136-2FD8-4344-B5D7-749424ADC471}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp5/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp5/SomeClass.cs">
     <Files>
-      <File FileName="ConsoleApp5/Program.cs" Line="58" Column="49" />
+      <File FileName="ConsoleApp5/Program.cs" Line="97" Column="6" />
+      <File FileName="ConsoleApp5/SomeClass.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleApp5" expanded="True">
             <Node name="ConsoleApp5" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="SomeClass.cs" selected="True" />
             </Node>
           </Node>
         </State>
