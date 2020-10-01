@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{84C87FD0-1265-4EE2-9AA2-8810F780583C}|Default">
+﻿<Properties StartupConfiguration="{4C714563-3E5C-435A-B858-D69E5532DEB2}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp7/Program.cs">
     <Files>
       <File FileName="ConsoleApp7/Program.cs" Line="13" Column="15" />
@@ -19,9 +19,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/piotr/Programowanie/c#/C# zaawansowany/Sekcja_2/ConsoleApp7/ConsoleApp7/Program.cs" relfile="ConsoleApp7/Program.cs" line="16" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

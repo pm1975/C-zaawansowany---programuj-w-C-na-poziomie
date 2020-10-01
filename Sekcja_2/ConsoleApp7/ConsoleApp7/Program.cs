@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ConsoleApp7
 {
@@ -6,13 +6,16 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-            var someNumberInString = "5";
+            var isSucceded = DateTime.TryParse(Console.ReadLine(), out var result);
 
-            var someNumberAsInt = int.Parse(someNumberInString);
-
-            //someNumberAsInt = int.Parse(Console.ReadLine());
-
-            var isSucceded = int.TryParse(Console.ReadLine(), out var result);
+            if (isSucceded)
+            {
+                // Do something
+            }
+            else
+            {
+                Console.WriteLine("Format was wrong, try again");
+            }
         }
     }
 }
