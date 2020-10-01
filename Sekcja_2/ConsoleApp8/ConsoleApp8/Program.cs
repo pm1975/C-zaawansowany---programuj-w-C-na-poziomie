@@ -22,13 +22,29 @@ namespace ConsoleApp8
         #endregion
         static void Main(string[] args)
         {
-            
+            var myClass = new MyClass();
+
+            myClass = null;
+
+            Console.WriteLine(myClass?.Variable);
+
+
+            if (myClass.MyProperty == null)
+            {
+                myClass.MyProperty = "coś tam 2";
+            }
+
+            myClass.MyProperty ??= "co"
         }
     }
 
-    #region NullPointerException
+    #region NullReferenceException
 
-
+    public class MyClass
+    {
+        public int Variable { get; set; }
+        public string MyProperty { get; set; } = "coś tam";
+    }
 
     #endregion
 }
