@@ -40,7 +40,7 @@ namespace ConsoleApp8
             myClass.MyProperty = null ?? "coś tam 2"; //"coś tam 2"
             #endregion
 
-            #region feature 3
+            #region switch expression (feature 3) C# 8
 
             var operation = 1;
             var someOutput = default(double);
@@ -77,18 +77,72 @@ namespace ConsoleApp8
             };
 
             #endregion
+
+            #region Function return more than one value (feature 4)
+
+            var a = myClass.SomeFunction();
+
+            _ = a.Item1;
+
+            #endregion
+
+            #region finally in try catch (feature 5)
+            try
+            {
+                // ...
+
+                MyClass mC = null;
+
+                mC.Variable = 5;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+
+            }
+            #endregion
+
+            #region null int double (feature 6)
+
+            int? i = default; //null
+
+            #endregion
         }
     }
 
-    #region NullReferenceException (feature 2)
-
     public class MyClass
     {
+        #region NullReferenceException (feature 2)
         public int Variable { get; set; }
         public string MyProperty { get; set; } = "coś tam";
+        #endregion
+
+        #region Function return more than one value (feature 4)
+        public (int, bool) SomeFunction()
+        {
+            return (5 + 2, true);
+        }
+        #endregion
+
+        #region null int double (feature 6)
+        public int? VariableIntNull { get; set; } //null
+        public bool? boolDefaultNull { get; set; } //extra third value: true, false, null
+        #endregion
+
+        #region nameof, typeof feature 7
+        public void Function()
+        {
+            var a = nameof(Variable); // "Variable"
+
+            var t = typeof(int);
+        }
+
+        #endregion
     }
 
-    #endregion
 
 
 }
