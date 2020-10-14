@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{44981CC7-FC0A-4DEC-BB64-40106FDAD543}|Default">
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp15 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp15/Program.cs">
+    <Files>
+      <File FileName="ConsoleApp15/Program.cs" Line="38" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConsoleApp15" expanded="True">
+            <Node name="ConsoleApp15" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
