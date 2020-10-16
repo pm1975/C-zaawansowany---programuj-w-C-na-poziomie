@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ConsoleApp15
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             #region part1
             var someClass = new MyClass<string>();
@@ -27,6 +28,7 @@ namespace ConsoleApp15
             listOfStrings.AddString("D");
             Console.WriteLine(listOfStrings.GetString(2));
             #endregion
+            #region part3
             var myListOfInts = new MyList<int>();
             myListOfInts.Add(10);
             myListOfInts.Add(20);
@@ -40,12 +42,22 @@ namespace ConsoleApp15
             myListOfStrings.Add("C");
             myListOfStrings.Add("D");
             Console.WriteLine(myListOfStrings.Get(2));
+            #endregion
+            #region part4
+            var myListOfMyClasses = new MyClasses<MyClass<int>>();
+            #endregion
+
         }
     }
     #region part1
-    public class MyClass<T>
+    public class MyClass<T> : IEquatable<int>
     {
         public T MyNumber { get; set; }
+
+        public bool Equals([AllowNull] int other)
+        {
+            throw new NotImplementedException();
+        }
     }
     #endregion
     #region part2
@@ -79,7 +91,7 @@ namespace ConsoleApp15
         }
     }
     #endregion
-
+    #region part3
     public class MyList<T>
     {
         private List<T> mObjects = new List<T>();
@@ -94,9 +106,10 @@ namespace ConsoleApp15
             mObjects.Add(@object);
         }
     }
-
+    #endregion
+    #region part4
     public class MyClasses<T>
-        where T : IEquatable, new()
+        where T : MyClass<int>, IEquatable<int>, new()
     {
         public void SomeFunction()
         {
@@ -107,10 +120,12 @@ namespace ConsoleApp15
 
             //...
 
-            if (someClass == someClass2)
+            if (someClass.Equals(someClass2))
             {
 
             }
         }
     }
+    #endregion
+
 }
