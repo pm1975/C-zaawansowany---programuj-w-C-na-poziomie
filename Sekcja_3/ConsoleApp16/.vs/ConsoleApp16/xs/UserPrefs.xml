@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{5AD02C03-D56E-4400-8777-78AE1DC3C313}|Default">
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp16 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp16/Program.cs">
+    <Files>
+      <File FileName="ConsoleApp16/Program.cs" Line="40" Column="21" />
+      <File FileName="ConsoleApp16/UserDto.cs" />
+      <File FileName="ConsoleApp16/UserApiModel.cs" />
+      <File FileName="ConsoleApp16/UserMapper.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConsoleApp16" expanded="True">
+            <Node name="ConsoleApp16" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
