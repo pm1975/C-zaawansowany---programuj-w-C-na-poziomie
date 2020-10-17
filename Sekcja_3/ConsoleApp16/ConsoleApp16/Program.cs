@@ -48,9 +48,19 @@ namespace ConsoleApp16
 
     public class SomeClass2 : SomeClass
     {
+        //przykrywa funkcję nową funkcją
         public new void SomeFunction()
         {
 
+        }
+    }
+
+    public interface ISomeInterface
+    {
+        //od wersji 8 C# można dodać metody do interfejsu.
+        void SomeFunction()
+        {
+            Console.WriteLine("wypisuje");
         }
     }
 }
