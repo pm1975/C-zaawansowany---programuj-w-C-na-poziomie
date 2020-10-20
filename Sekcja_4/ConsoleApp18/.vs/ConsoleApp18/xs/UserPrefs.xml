@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{BC16E5AF-B823-4EAF-8198-66231FB9A5A2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp18/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp18/User.cs">
     <Files>
-      <File FileName="ConsoleApp18/Program.cs" Line="63" Column="45" />
-      <File FileName="ConsoleApp18/User.cs" Line="10" Column="42" />
+      <File FileName="ConsoleApp18/Program.cs" Line="83" Column="1" />
+      <File FileName="ConsoleApp18/User.cs" Line="6" Column="1" />
+      <File FileName="ConsoleApp18/UserViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleApp18" expanded="True">
             <Node name="ConsoleApp18" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="User.cs" selected="True" />
             </Node>
           </Node>
         </State>
