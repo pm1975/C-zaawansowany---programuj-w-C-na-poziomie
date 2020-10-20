@@ -15,7 +15,7 @@ namespace ConsoleApp18
                 ValueOfSomethingElse = "safdsf"
             };
             #endregion
-
+            #region variables
             var listOfInts = new List<int>
             {
                 2, 5, 8, 1, 10, 15
@@ -47,6 +47,7 @@ namespace ConsoleApp18
                     Email = "przykladowy2@email.com"
                 }
             };
+            #endregion
 
             foreach (var valueInt in listOfInts.Where(x => x > 5))
             {
@@ -65,6 +66,17 @@ namespace ConsoleApp18
             Console.WriteLine(listOfInts.FirstOrDefault(x => x > 5));
             Console.WriteLine(listOfInts.Where(x => x > 5).Skip(1).FirstOrDefault());
             Console.WriteLine(listOfUsers.Average(x => x.Age));
+
+            var someStrings = listOfStrings.Skip(1).Take(2);
+
+            var intConverterToString = listOfInts.Select(x => x.ToString()).ToList();
+
+            var strings = listOfStrings.Select(x => x + " costam").ToList();
+
+            strings.ForEach(x =>
+            {
+                Console.WriteLine(x);
+            });
         }
     }
 }
