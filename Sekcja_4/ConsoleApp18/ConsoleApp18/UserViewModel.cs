@@ -8,5 +8,9 @@ namespace ConsoleApp18
         public int Age { get; set; }
 
         public string Email { get; set; }
+
+        public string Title { get; set; }
+        public string Title2 { get; set; }
+        public string Title3 { get; set; }
     }
 }

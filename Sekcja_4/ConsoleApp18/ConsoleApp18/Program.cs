@@ -48,7 +48,7 @@ namespace ConsoleApp18
                 }
             };
             #endregion
-
+            #region linq
             foreach (var valueInt in listOfInts.Where(x => x > 5))
             {
                     Console.WriteLine(valueInt);
@@ -77,6 +77,29 @@ namespace ConsoleApp18
             {
                 Console.WriteLine(x);
             });
+            #endregion
+
+            #region siła linq.Select przy klasach
+            var viewModels = listOfUsers
+                .Select(x => new
+                {
+                    UserData = x,
+                    Title = GetUserTitle(x.Age)
+                })
+                .Select(x => new UserViewModel
+                {
+                    Age = x.UserData.Age,
+                    Email = x.UserData.Email,
+                    Name = x.UserData.Name,
+                    Title = x.Title,
+                    Title2 = x.Title,
+                    Title3 = x.Title
+                })
+                .ToList();
+            #endregion
         }
+
+        private static string GetUserTitle(int userAge)
+            => userAge > 22 ? "Title1" : "NoTitle";
     }
 }
