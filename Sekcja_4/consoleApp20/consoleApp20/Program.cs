@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace consoleApp20
 {
@@ -8,16 +9,31 @@ namespace consoleApp20
     {
         static void Main(string[] args)
         {
-            //IEnumerable, IQueryable, ICollection, IList
-            var list = new List<int>();
-            IEnumerable enumerable;
-            IQueryable
+            #region MyRegion
+            var listt = new List<int>();
+            IEnumerable<int> enumerable = default(IEnumerable<int>);
+            IQueryable<int> queryable = default(IQueryable<int>);
+            ICollection<int> collection = default(ICollection<int>);
+            IList<int> list = default(IList<int>);
+
+            var list1 = enumerable.ToList();
+            var list2 = queryable.ToList();
+            var list3 = collection.ToList();
+            var list4 = list.ToList();
+
             foreach (var variable in list)
             {
 
             }
 
             PrintAllElements(list);
+            #endregion
+
+            var list1000ints = new List<int>();
+
+            var midList = list1000ints.Select(x => x + 2);
+
+            var resultList = midList.Skip(2).Take(5).ToList();
         }
 
         private static void PrintAllElements(IList<int> list)
