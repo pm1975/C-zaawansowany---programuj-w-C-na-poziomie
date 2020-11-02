@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{4D9FEDFF-101A-45C8-BDBB-D1FFF0D271CF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp23Json/Program.cs">
+    <Files>
+      <File FileName="ConsoleApp23Json/Program.cs" Line="27" Column="1" />
+      <File FileName="ConsoleApp23Json/JSONExample.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConsoleApp23Json" expanded="True">
+            <Node name="ConsoleApp23Json" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp23Json PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/piotr/Programowanie/c#/C# zaawansowany/Sekcja_4/ConsoleApp23Json/ConsoleApp23Json/Program.cs" relfile="ConsoleApp23Json/Program.cs" line="25" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

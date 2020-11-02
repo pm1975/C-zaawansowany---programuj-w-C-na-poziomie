@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{F3161A17-FD54-4D73-AD1B-49AAEAEC0784}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApp22/Program.cs">
     <Files>
-      <File FileName="ConsoleApp22/Program.cs" Line="31" Column="1" />
+      <File FileName="ConsoleApp22/Program.cs" Line="15" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleApp22" expanded="True">
             <Node name="ConsoleApp22" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
