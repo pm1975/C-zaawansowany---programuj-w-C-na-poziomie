@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfApp24.Database\WpfApp24.Database.csproj" />
+    <ProjectReference Include="..\WpfApp24.Domain\WpfApp24.Domain.csproj" />
+    <ProjectReference Include="..\WpfApp24.Services\WpfApp24.Services.csproj" />
+  </ItemGroup>
+
+</Project>
