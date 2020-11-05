@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace WpfApp25Downloader
@@ -16,12 +17,22 @@ namespace WpfApp25Downloader
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var webClient = new WebClient();
+            var currentUrl = WebsiteUrl.Text;
+            Task.Run(() =>
+            {
+                var webClient = new WebClient();
 
-            //webClient.DownloadFile(WebsiteUrl.Text, "przykladowy");
-            var downloadString = webClient.DownloadString(WebsiteUrl.Text);
+                //webClient.DownloadFile(WebsiteUrl.Text, "przykladowy");
+                var downloadString = webClient.DownloadString(currentUrl);
 
-            Thread.Sleep(2000);
+                Thread.Sleep(2000);
+            });
+
+        }
+
+        private void DoSomeWork()
+        {
+
         }
     }
 }
