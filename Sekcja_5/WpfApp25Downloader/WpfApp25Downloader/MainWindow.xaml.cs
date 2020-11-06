@@ -18,6 +18,9 @@ namespace WpfApp25Downloader
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var currentUrl = WebsiteUrl.Text;
+
+            DoSomeWork();
+
             Task.Run(() =>
             {
                 var webClient = new WebClient();
@@ -28,11 +31,22 @@ namespace WpfApp25Downloader
                 Thread.Sleep(2000);
             });
 
+            var doSomeWorkTask = DoSomeWork();
+
+            doSomeWorkTask.Wait();
+
+            var resultInt = doSomeWorkTask.Result;
+
+            var c = 5;
         }
 
-        private void DoSomeWork()
+        private async Task<int> DoSomeWork()
         {
+            var a = 2;
 
+            await Task.Delay(2000);
+
+            return 2;
         }
     }
 }
