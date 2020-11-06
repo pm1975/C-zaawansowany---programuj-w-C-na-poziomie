@@ -15,29 +15,35 @@ namespace WpfApp25Downloader
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var currentUrl = WebsiteUrl.Text;
 
-            DoSomeWork();
-
-            Task.Run(() =>
+            await Task.Run(async () =>
             {
                 var webClient = new WebClient();
 
                 //webClient.DownloadFile(WebsiteUrl.Text, "przykladowy");
-                var downloadString = webClient.DownloadString(currentUrl);
+                var downloadString = await webClient.DownloadStringTaskAsync(currentUrl);
 
-                Thread.Sleep(2000);
+
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    DisplayText.Text = "Sukces";
+                });
+
             });
 
-            var doSomeWorkTask = DoSomeWork();
 
-            doSomeWorkTask.Wait();
+            #region .Wait() .Result
+            //var doSomeWorkTask = DoSomeWork();
 
-            var resultInt = doSomeWorkTask.Result;
+            //doSomeWorkTask.Wait();
 
-            var c = 5;
+            //var resultInt = doSomeWorkTask.Result;
+
+            //var c = 5;
+            #endregion
         }
 
         private async Task<int> DoSomeWork()
